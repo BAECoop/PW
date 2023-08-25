@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 25px;
+    background-color: #000;
+}
+
+.box{
+    width: 65px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 0.6rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .4s ease; 
+}
+
+.box:hover{
+    width: 200px;
+    background: purple;
+    border-radius: 35px;
+    color: #fff;
+    box-shadow: 0 0 50px rebeccapurple;
+    text-align: center;
+}
+
+.box:nth-child(2):hover{
+    background: green;
+    box-shadow: 0 0 50px green;
+}
+
+.box:nth-child(3):hover{
+    background: blue;
+    box-shadow: 0 0 50px blue;
+}
+
+.box:nth-child(4):hover{
+    background: rgba(46, 46, 231, 0.733);
+    box-shadow: 0 0 50px  rgba(46, 46, 231, 0.733);
+}
+
+.nav p{
+    transform: translate(60px);
+}
+
+.box .icon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 50%;
+    transition: all .4s ease;
+}
+
+.instagram{
+    background-color: purple ;
+}
+
+.whatsapp{
+    background-color: green;
+}
+
+.facebook{
+    background-color: blue;
+}
+
+.twitter{
+    background-color:  rgba(46, 46, 231, 0.733);
+}
+
+.box:hover .icon{
+    background: #fff;
+    color: rgb(53, 2, 146);
+    box-sizing: 0 0 20px gray;
+}
