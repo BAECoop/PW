@@ -1,0 +1,15 @@
+body{
+    margin: 2px;
+    padding: 3px;
+    background-color: black;
+}
+
+@font-face{
+    font-family: Halloween;
+    src:url(/assets/fonte/halloween.ttf) format('trutype')
+}
+
+.hell{
+    font-family: Halloween;
+    color:red;
+} 
