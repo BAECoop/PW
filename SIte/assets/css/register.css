@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Delius Swash Caps', cursive;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top left, #3972ecab,rgba(30, 186, 233, 0.801));
+}
+
+.navbar{
+    box-sizing: border-box;
+    width: 1772px;
+    height: 50px;
+    border: 1px solid rgb(89, 91, 224);
+    padding: 0;
+    background-color: rgb(255, 175, 3);
+}
+
+main{
+    margin: 0;
+    padding: 0;
+}
+
+.login{
+    width: 350px;
+    height: 450px;
+    padding: auto;
+    box-sizing: border-box;
+    border: 1px solid rgb(2, 4, 168);
+    position: relative;
+    top: 250px;
+    left: 700px;
+    border-radius: 25px;
+}
+
+.login h3{
+    font-size: 30px;
+    text-align: center;
+    top: 10px;
+}
+
+#email{
+    top: 100px;
+    left: 15px
+}
+
+#pw{
+    top: 120px;
+    left: 15px
+}
+
+input{
+    position: relative;
+    border-radius: 25px;
+    width: 80%;
+    height: 30px;
+    left: 20px;
+}
+
+#login{
+    top: 250px;
+    border-radius: 10px;
+}
+
+.login a{
+    top: 70%;
+    left: -100px;
+    position: inherit;
+}
