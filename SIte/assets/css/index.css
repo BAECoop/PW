@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;}
+
+#user{
+    position: fixed;
+    top: .5rem;
+    right: 2rem;
+    background-color: blue;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    z-index: 27;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1.1);
+}
+
+
+#perfil{
+    position: fixed;
+    top: 1.2rem;
+    right: 2.2rem;
+    border: 0.1rem solid blue;
+    padding: 1rem 1.5rem 1rem 1rem;
+    border-radius: 1rem;
+    z-index: 2;
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: top right;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1.1);
+}
+
+#perfil.perfil-toggle{
+    transform: scale(1);
+    opacity: 1;
+}
+
+#perfil a{
+    display: block;
+    padding: 0.5rem 7rem 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: rgba(20, 173, 211, 0.781)
+}
+
+#perfil a:hover{
+    color: rgb(72, 26, 238);
+    background-color: lavender;
+    transition: all 1s ease;
+}
+
+.home{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    border: 1px solid rgb(89, 91, 224);
+    background-color: rgba(7, 4, 185, 0.575);
+}
