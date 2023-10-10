@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="/assets/css/login.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="login-container">
+    <div class="login-box" id="loginBox">
+      <h1>Login</h1>
+      <input type="email" id="emailInput" placeholder="Email">
+      <input type="password" id="passwordInput" placeholder="Password">
+      <button onclick="login()">Enter</button>
+      <p>Don't have an account? <a href="#" onclick="toggleForm()">Register</a></p>
+    </div>
+
+    <div class="login-box hidden" id="registerBox">
+      <h1>Register</h1>
+      <input type="email" id="registerEmailInput" placeholder="Email">
+      <input type="password" id="registerPasswordInput" placeholder="Password">
+      <button onclick="register()">Register</button>
+      <p>Already have an account? <a href="#" onclick="toggleForm()">Login</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
