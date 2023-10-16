@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Login</title>
+  <link rel="stylesheet" type="text/css" href="/assets/css/login.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Login</a></li>
+    </ul>
+    <a id="registerAnchor" href="#loginSection" onclick="rotateCard()">Registrar-se</a>
+    <div id="loginBtnContainer">
+        <button id="loginAnchor" onclick="backToLogin()">Login</button>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="card">
+      <div class="front">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button id="loginBtn">Entrar</button>
+        <a href="#registerSection" id="registerLink">Registrar-se</a>
+      </div>
+      <div class="back" id="registerSection">
+        <h2>Registrar-se</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <input type="password" placeholder="Confirm Password">
+        <button id="registerBtn">Registrar</button>
+        <button id="loginLink" onclick="backToLogin()">Login</button>
+      </div>
+    </div>
+  </div>
+  <script src="/assets/js/login.js"></script>
+</body>
+</html>
