@@ -1,0 +1,249 @@
+body {
+  background-color: #1a1a1a;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul img{
+  border-radius: 50%;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  top: 225px;
+  left: -20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  perspective: 1000px;
+  padding: 0;
+  height: 400px;
+  width: 800px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card .front{
+  background-color: #000;
+  border-radius: 15px;
+}
+
+.card .front input{
+  position: relative;
+  border-radius: 12px;
+  width: 15rem;
+  height: 5rem;
+}
+
+#user{
+  top: 20px;
+  left: -28%;
+}
+
+#pw{
+  top: 35px;
+  left: -28%;
+}
+
+.card .front h2{
+  position: relative;
+  color: #fff;
+  top: 10px;
+  left: -220px;
+  font-size: 40px;
+}
+
+#loginBtn{
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  width: 65px;
+  height: 100px;
+  background: rgb(66, 65, 65);
+  top: 60px;
+  left: -230px;
+  border-radius: 8px;
+}
+
+.card .front p{
+  position: relative;
+  color: #ffffffc2;
+  top: 70px;
+  left: -220px;
+}
+  
+.card .front a{
+  color: #fff;
+  text-decoration: none;
+  justify-items: center;
+}
+
+.separacao{
+  position: relative;
+  border: solid 1px #fff;
+  width: 250px;
+  height: .5px;
+  transform: rotate(90deg);
+  top: -15%;
+}
+
+#google{
+  position: relative;
+  margin: 0;
+  border: solid 1px #d10303;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+  height: 10rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  border-radius: 20px;
+  font-size: 17px;
+  top: -190px;
+  left: 190px;
+}
+
+#google:hover{
+  border: solid 1px #fff;
+  transition: .2s;
+}
+
+#facebook{
+  padding: 0;
+  margin: 0;
+  position: relative;
+  border: solid 1px rgb(4, 75, 228);
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+  height: 10rem;  
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  border-radius: 20px;
+  font-size: 17px;
+  top: -140px;
+  left: 190px;
+}
+
+#facebook:hover{
+  border: solid 1px rgb(0, 0, 255);
+  transition: .2s;
+}
+
+#outro{
+  margin: 0;
+  position: relative;
+  border: solid 1px #fff;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+  height: 10rem;  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  border-radius: 20px;
+  font-size: 17px;
+  top: -90px;
+  left: 190px;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.front {
+  transform: rotateY(0deg);
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  border-radius: 15px;
+}
+
+.back h2{
+  position: relative;
+  color: #fff;
+  top: -40px;
+  left: 10px
+}
+
+.back input, .back button {
+  position: relative;
+  margin-bottom: 10px;
+  margin: 10px;
+}
+
+.back input[type="text"], .back input[type="password"] {
+  position: relative;
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+}
+
+button {
+  position: relative;
+  padding: 10px 20px;
+  background-color: #333;
+  border-radius: 8px;
+  color: white;
+  top: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
