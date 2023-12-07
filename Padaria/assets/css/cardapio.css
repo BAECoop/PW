@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Archivo+Black&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0px;
+    font-family: 'Aoboshi One', serif;
+    font-family: 'Archivo Black', sans-serif;
+    overflow-x: hidden;
+    display: grid;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.navbar a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.navbar a:hover {
+
+    color: black;
+    transform: scale(1.15);
+    transition: 0.5s;
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.tittle-cardapio {
+    position: relative;
+    top: 2rem;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    font-size: 21px;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 14rem;
+    margin-top: 20px;
+}
+
+.salgados {
+    position: relative;
+    top: 2rem;
+    font-size: 15px;
+}
+
+h2 {
+    margin-left: 3rem;
+    height: auto;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+}
+
+img {
+    width: 200px;
+    height: 224px;
+    border-radius: 12px;
+}
+
+.card {
+    display: flex;
+    width: 200px;
+    height: 224px;
+    perspective: 1500px;
+    margin-left: 6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+
+.card-back {
+    transform: rotateY(180deg);
+    background-color: grey;
+    align-items: center;
+    text-align: center; 
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
